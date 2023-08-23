@@ -4,10 +4,10 @@ const config = {
         '@semantic-release/commit-analyzer',
         '@semantic-release/release-notes-generator',
         ["@semantic-release/git", {
-            "assets": ["dist/*.js", "dist/*.js.map"],
+            "assets": ["backend/*.js"],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-            // confines the message commit format. If it's a chore, they skip the CI indicates to github 
-            // that its not supposed to trigger any workflow
+            // assets are included in release. 
+            // message defines the commit message that is used when updating repo. 
         }],
         '@semantic-release/github'
     ]
