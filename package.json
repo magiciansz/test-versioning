@@ -14,5 +14,6 @@
   },
   "release": {
     "branches": ["main"]
-  }
+  },
+  "name": "test-versioning"
 }
