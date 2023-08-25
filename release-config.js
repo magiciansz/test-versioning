@@ -9,7 +9,10 @@ const config = {
             // assets are included in release. 
             // message defines the commit message that is used when updating repo. 
         }],
-        '@semantic-release/github'
+        '@semantic-release/github',
+        ["@semantic-release/npm", {
+            "npmPublish": false,
+          }],
     ]
 };
 
