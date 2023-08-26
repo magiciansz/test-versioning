@@ -15,5 +15,7 @@
   "release": {
     "branches": ["main"]
   },
-  "name": "test-versioning"
+  "name": "test-versioning",
+  "private": true
+
 }
